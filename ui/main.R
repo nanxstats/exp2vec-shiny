@@ -6,8 +6,7 @@ navbarPage(
     version = 5,
     "primary" = "#6F92BA",
     "navbar-light-bg" = "#FFF",
-    "font-size-base" = "1.125rem",
-    "font-family-sans-serif" = '"Red Hat Text", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";'
+    "font-size-base" = "1.125rem"
   ),
   inverse = FALSE,
   collapsible = FALSE,

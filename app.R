@@ -1,6 +1,8 @@
 library("shiny")
 
 source("modules/card.R")
+source("modules/similarity.R")
+source("modules/nn.R")
 
 ui <- function(request) {
   source("ui/main.R", local = TRUE)$value

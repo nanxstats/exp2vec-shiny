@@ -9,7 +9,7 @@ tabPanel(
           width = 12,
           card(
             title = "Find gene neighbours",
-            textInput("zzz", label = "Gene name", value = "KRAS")
+            selectizeInput("gene_nn", label = "Gene name", choices = NULL)
           )
         ),
         p(),
@@ -17,7 +17,7 @@ tabPanel(
           width = 12,
           card(
             title = "Output",
-            p("Placeholder")
+            DT::DTOutput("dt_nn")
           )
         )
       )
