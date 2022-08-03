@@ -1,4 +1,4 @@
-updateSelectizeInput(session, "gene_nn", choices = sort(rownames(word_vectors)), server = TRUE)
+updateSelectizeInput(session, inputId = "gene_nn", choices = sort(rownames(word_vectors)), selected = "KRAS", server = TRUE)
 
 get_df_nn <- reactive({
   req(input$gene_nn)
