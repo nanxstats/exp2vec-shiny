@@ -8,17 +8,58 @@ tabPanel(
         column(
           width = 12,
           card(
-            title = "Find gene analogies",
-            textInput("zzz1", label = "Gene name", value = "KRAS")
+            title = "Inputs",
+            fluidRow(
+              column(
+                width = 4,
+                selectizeInput("gene1", label = "", choices = NULL, width = "100%")
+              ),
+              column(
+                width = 4,
+                textInputDisabled("minus1", label = "", value = "for"),
+              ),
+              column(
+                width = 4,
+                selectizeInput("gene2", label = "", choices = NULL, width = "100%")
+              )
+            ),
+            fluidRow(
+              column(
+                width = 4,
+                span(),
+              ),
+              column(
+                width = 4,
+                textInputDisabled("equalsign", label = "", value = "is like"),
+              ),
+              column(
+                width = 4,
+                span()
+              )
+            ),
+            fluidRow(
+              column(
+                width = 4,
+                textInputDisabled("gene3", label = "", value = "?")
+              ),
+              column(
+                width = 4,
+                textInputDisabled("minus2", label = "", value = "for"),
+              ),
+              column(
+                width = 4,
+                selectizeInput("gene4", label = "", choices = NULL, width = "100%")
+              )
+            ),
           )
-        ),
-        p(),
-        column(
-          width = 12,
-          card(
-            title = "Output",
-            p("Placeholder")
-          )
+        )
+      ),
+      p(),
+      column(
+        width = 12,
+        card(
+          title = "Outputs",
+          DT::DTOutput("dt_analogy")
         )
       )
     )

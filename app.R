@@ -1,6 +1,7 @@
 library("shiny")
 
 source("modules/card.R")
+source("modules/text-input-disabled.R")
 source("modules/similarity.R")
 source("modules/nn.R")
 

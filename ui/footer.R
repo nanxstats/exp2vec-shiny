@@ -6,7 +6,7 @@ tags$footer(
       hr(),
       includeCSS("www/custom.css"),
       p(paste("exp2vec-shiny", as.vector(read.dcf("DESCRIPTION", fields = "Version"))), class = "text-muted"),
-      p("Built by ", a("Nan Xiao", href = "https://nanx.me/"), class = "text-muted")
+      p("Built by ", a("Nan Xiao", href = "https://nanx.me/", target = "_blank"), class = "text-muted")
     )
   )
 )

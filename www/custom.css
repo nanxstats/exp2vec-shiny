@@ -74,3 +74,13 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     justify-content: center;
     font-variant-numeric: tabular-nums;
 }
+
+.table.dataTable tbody td.active,
+.table.dataTable tbody tr.active td {
+    background-color: #6F92BA;
+    color: #FFF;
+}
+
+.page-item.active .page-link {
+    color: #fff;
+}
