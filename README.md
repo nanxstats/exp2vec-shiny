@@ -2,6 +2,8 @@
 
 Shiny app for [exp2vec](https://github.com/nanxstats/exp2vec).
 
+<https://nanx.shinyapps.io/exp2vec/>
+
 ## Installing dependencies
 
 Install the R packages used by the app with:
