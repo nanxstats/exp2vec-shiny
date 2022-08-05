@@ -7,3 +7,5 @@ Imports:
     DT,
     htmltools,
     shiny
+Suggests:
+    rsconnect
